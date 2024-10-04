@@ -2,7 +2,7 @@ from flask import g
 import sqlite3
 
 def connect_db():
-    sql = sqlite3.connect('E:\\Python\\Flask Projects\\Flask_Questions_And_Answers\\questions.db')
+    sql = sqlite3.connect('/home/daniel/Python/QuestionsAndAnswers/questions.db')
     sql.row_factory = sqlite3.Row
     return sql
 
